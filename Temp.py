@@ -24,7 +24,7 @@ elif choice == "2":
 elif choice == "3":
     # Single set file input
     try:
-        with open("weather_single.txt", "r") as f:
+        with open("Weather_single.txt", "r") as f:
             a, b, c, time = map(float, f.readline().split())
             temperature = a * time**2 + b * time + c
             print(f"The Temperature at time {time} is {temperature:.2f}")
@@ -36,7 +36,7 @@ elif choice == "3":
 elif choice == "4":
     # Multiple set file input
     try:
-        with open("weather_multiple.txt", "r") as f:
+        with open("Weather_mult.txt", "r") as f:
             for idx, line in enumerate(f, start=1):
                 try:
                     a, b, c, time = map(float, line.strip().split())
